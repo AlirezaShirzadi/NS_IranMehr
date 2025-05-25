@@ -232,6 +232,7 @@
                         </svg>
                     </div>
                     <nav id="main-menu" class="nav">
+                        <!-- Start Sidebar Header -->
                         <div class="px-2 py-4 flex lg:hidden items-center justify-between">
                             <!-- Start Logo -->
                             <a href="/" class="shrink-0">
@@ -246,7 +247,9 @@
                             </div>
                             <!-- End Close Btn -->
                         </div>
+                        <!-- End Sidebar Header -->
                         <ul class="nav__list">
+                            <!-- Start Nav Item -->
                             <li class="nav__item nav__item--active group/nav__item">
                                 <a href="/" class="nav__link group-hover/nav__item:bg-[#0052B41A]">
                                     <span class="nav__link--icon">
@@ -257,26 +260,82 @@
                                     <span class="nav__link--text">صفحه اصلی</span>
                                 </a>
                             </li>
-                            <li class="nav__item group/nav__item">
-                                <a href="/" class="nav__link group-hover/nav__item:bg-[#0052B41A]">
+                            <!-- End Nav Item -->
+                            <!-- Start Nav Item With Submenu -->
+                            <li class="nav__item has-submenu group/nav__item">
+                                <a href="javascript:void(0)" class="nav__link group-hover/nav__item:bg-[#0052B41A]">
                                     <span class="nav__link--icon">
                                         <svg>
                                             <use href="#monitor-mobile-icon"/>
                                         </svg>
                                     </span>
                                     <span class="nav__link--text">دوره های آنلاین</span>
+                                    <span class="submenu-toggle rotate-180 lg:rotate-90">
+                                        <svg class="size-4 transition-transform duration-300">
+                                            <use href="#arrow-curly-icon"/>
+                                        </svg>
+                                    </span>
                                 </a>
+                                <ul class="submenu">
+                                    <li class="submenu__item">
+                                        <a href="/" class="submenu__link">دوره های برنامه نویسی</a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="/" class="submenu__link">دوره های طراحی</a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="/" class="submenu__link">دوره های دیجیتال مارکتینگ</a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li class="nav__item group/nav__item">
-                                <a href="/" class="nav__link group-hover/nav__item:bg-[#0052B41A]">
+                            <!-- End Nav Item With Submenu -->
+                            <!-- Start Nav Item With Nested Submenu -->
+                            <li class="nav__item has-submenu group/nav__item">
+                                <a href="javascript:void(0)" class="nav__link group-hover/nav__item:bg-[#0052B41A]">
                                     <span class="nav__link--icon">
                                         <svg>
                                             <use href="#teacher-icon"/>
                                         </svg>
                                     </span>
                                     <span class="nav__link--text">دپارتمان های آموزشی</span>
+                                    <span class="submenu-toggle rotate-180 lg:rotate-90">
+                                        <svg class="size-4 transition-transform duration-300">
+                                            <use href="#arrow-curly-icon"/>
+                                        </svg>
+                                    </span>
                                 </a>
+                                <ul class="submenu">
+                                    <li class="submenu__item">
+                                        <a href="/" class="submenu__link">دپارتمان برنامه نویسی</a>
+                                    </li>
+                                    <li class="submenu__item has-submenu">
+                                        <a href="javascript:void(0)" class="submenu__link">
+                                            <span>دپارتمان طراحی</span>
+                                            <span class="submenu-toggle">
+                                                <svg class="size-3 transition-transform duration-300">
+                                                    <use href="#arrow-curly-icon"/>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                        <ul class="submenu submenu--nested">
+                                            <li class="submenu__item">
+                                                <a href="/" class="submenu__link">طراحی وب</a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a href="/" class="submenu__link">طراحی گرافیک</a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a href="/" class="submenu__link">رابط کاربری</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="/" class="submenu__link">دپارتمان دیجیتال مارکتینگ</a>
+                                    </li>
+                                </ul>
                             </li>
+                            <!-- End Nav Item With Nested Submenu -->
+                            <!-- Start Nav Item -->
                             <li class="nav__item group/nav__item">
                                 <a href="/" class="nav__link group-hover/nav__item:bg-[#0052B41A]">
                                     <span class="nav__link--icon">
@@ -287,6 +346,8 @@
                                     <span class="nav__link--text">وبلاگ</span>
                                 </a>
                             </li>
+                            <!-- End Nav Item -->
+                            <!-- Start Nav Item -->
                             <li class="nav__item group/nav__item">
                                 <a href="/" class="nav__link group-hover/nav__item:bg-[#0052B41A]">
                                     <span class="nav__link--icon">
@@ -297,6 +358,8 @@
                                     <span class="nav__link--text">درباره ما</span>
                                 </a>
                             </li>
+                            <!-- End Nav Item -->
+                            <!-- Start Nav Item -->
                             <li class="nav__item group/nav__item">
                                 <a href="/" class="nav__link group-hover/nav__item:bg-[#0052B41A]">
                                     <span class="nav__link--icon">
@@ -307,6 +370,7 @@
                                     <span class="nav__link--text">تماس باما</span>
                                 </a>
                             </li>
+                            <!-- End Nav Item -->
                         </ul>
                     </nav>
                     <!-- End Nav -->
