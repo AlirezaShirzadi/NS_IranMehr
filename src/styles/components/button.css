@@ -2,15 +2,15 @@
     @apply flex items-center rounded-xl text-white;
 
     .icon {
-        @apply p-3 bg-[#FFFFFF29];
+        @apply p-2 lg:p-3 bg-[#FFFFFF29];
 
         svg {
-            @apply size-6;
+            @apply size-4 lg:size-6;
         }
     }
 
     .text {
-        @apply py-[15px] ps-2 pe-6 transition-all duration-300 text-sm;
+        @apply py-2 lg:py-[15px] ps-2 pe-2 lg:pe-6 transition-all duration-300 text-xs lg:text-sm;
     }
 }
 

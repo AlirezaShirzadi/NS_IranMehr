@@ -4,5 +4,44 @@
 
     .header-wrapper {
         @apply flex justify-between items-center;
+
+        .nav {
+            @apply bg-white absolute order-2 top-0 -right-64 h-dvh lg:top-auto lg:right-auto lg:h-auto lg:relative xl:shrink-0 xl:grow lg:px-4 xl:px-10 w-64 lg:w-auto transition-all duration-200;
+
+            .nav__list {
+                @apply flex flex-col lg:flex-row items-start lg:items-center justify-between;
+
+                .nav__item {
+                    @apply w-full lg:w-auto;
+                    .nav__link {
+                        @apply flex items-center lg:rounded-lg xl:rounded-xl gap-2 py-2 px-1 xl:py-[14px] xl:px-4 transition-all duration-300;
+
+                        .nav__link--icon {
+                            svg {
+                                @apply size-5;
+                            }
+                        }
+
+                        .nav__link--text {
+                            @apply text-general-black text-sm xl:text-base/[18px];
+                        }
+                    }
+                }
+
+                .nav__item--active {
+                    .nav__link {
+                        @apply bg-[#0052B41A];
+                    }
+
+                    .nav__link--text {
+                        @apply font-YekanBakhDemiBold;
+                    }
+                }
+            }
+        }
+
+        .nav.active {
+            @apply right-0;
+        }
     }
 }
