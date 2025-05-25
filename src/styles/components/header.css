@@ -1,0 +1,8 @@
+.main-header {
+    @apply bg-white py-6;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
+
+    .header-wrapper {
+        @apply flex justify-between items-center;
+    }
+}

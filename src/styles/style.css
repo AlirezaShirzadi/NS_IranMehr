@@ -1,0 +1,7 @@
+@import 'tailwindcss';
+/* globals */
+@import "../styles/partials/colors.css";
+@import "../styles/partials/fonts.css";
+
+/* components */
+@import "../styles/components/header.css";
