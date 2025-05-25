@@ -1,0 +1,20 @@
+.btn {
+    @apply flex items-center rounded-xl text-white;
+
+    .icon {
+        @apply p-3 bg-[#FFFFFF29];
+
+        svg {
+            @apply size-6;
+        }
+    }
+
+    .text {
+        @apply py-[15px] ps-2 pe-6 transition-all duration-300 text-sm;
+    }
+}
+
+.btn--primary {
+    @apply bg-primary;
+}
+
