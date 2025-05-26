@@ -1,0 +1,38 @@
+.section-home-slider {
+    margin: 48px 0 50px 0;
+
+    .home-slider {
+        @apply relative;
+
+        .owl-stage-outer {
+            @apply rounded-4xl;
+        }
+
+        .owl-nav {
+            @apply absolute mt-0 -mx-5 top-1/2 left-0 right-0 z-30 hidden lg:flex justify-between -translate-y-1/2;
+
+            button {
+                @apply hover:bg-transparent
+            }
+        }
+
+        .owl-dots {
+            @apply mt-2;
+
+            .owl-dot.active {
+                span {
+                    @apply bg-secondary;
+                }
+            }
+        }
+
+        .first-curve {
+            @apply hidden lg:block absolute z-10 top-1/2 right-0 -translate-y-1/2 w-[28px] h-[138px];
+        }
+
+        .second-curve {
+            @apply hidden lg:block absolute z-10 top-1/2 left-0 rotate-180 -translate-y-1/2 w-[28px] h-[138px];
+        }
+    }
+
+}

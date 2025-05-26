@@ -9,7 +9,7 @@
     </head>
     <body class="font-YekanBakh relative">
         <!-- Start Overlay -->
-        <div id="overlay" class="absolute hidden inset-0 h-dvh w-dvw bg-black/40"></div>
+        <div id="overlay" class="absolute hidden inset-0 h-dvh w-dvw bg-black/40 z-50"></div>
         <!-- End Overlay -->
         <!-- Start Icons -->
         <svg class="hidden">
@@ -207,12 +207,14 @@
                       stroke-linejoin="round"/>
             </symbol>
 
-            <symbol id="bars-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            <symbol id="bars-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
             </symbol>
 
-            <symbol id="x-mark-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            <symbol id="x-mark-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/>
             </symbol>
         </svg>
         <!-- End Icons -->
@@ -228,7 +230,7 @@
                     <!-- Start Nav -->
                     <div id="nav-toggle" class="block lg:hidden order-1 cursor-pointer">
                         <svg class="size-6">
-                            <use href="#bars-icon" />
+                            <use href="#bars-icon"/>
                         </svg>
                     </div>
                     <nav id="main-menu" class="nav">
@@ -242,7 +244,7 @@
                             <!-- Start Close Btn -->
                             <div id="nav-close" class="cursor-pointer">
                                 <svg class="size-4">
-                                    <use href="#x-mark-icon" />
+                                    <use href="#x-mark-icon"/>
                                 </svg>
                             </div>
                             <!-- End Close Btn -->
@@ -388,6 +390,36 @@
             </div>
         </header>
         <!-- Header end -->
+        <!-- Start Main -->
+        <main>
+            <!-- Start Slider -->
+            <section class="section-home-slider">
+                <div class="container mx-auto px-2 sm:px-0 relative">
+                    <div class="home-slider owl-carousel owl-theme">
+                        <div class="item">
+                            <a href="#" aria-label="slider-link">
+                                <figure class="relative">
+                                    <img src="/images/slider.webp" alt="slider"/>
+                                    <img class="first-curve" src="/images/slider-curve.webp" alt="curve" width="28" height="138">
+                                    <img class="second-curve" src="/images/slider-curve.webp" alt="curve" width="28" height="138">
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#" aria-label="slider-link">
+                                <figure class="relative">
+                                    <img src="/images/slider.webp" alt="slider"/>
+                                    <img class="first-curve" src="/images/slider-curve.webp" alt="curve" width="28" height="138">
+                                    <img class="second-curve" src="/images/slider-curve.webp" alt="curve" width="28" height="138">
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Slider -->
+        </main>
+        <!-- End Main -->
         <script type="module" src="/src/scripts/main.js"></script>
     </body>
 </html>
