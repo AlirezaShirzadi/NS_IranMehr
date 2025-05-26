@@ -1,0 +1,10 @@
+.section-home-about {
+    @apply pt-[50px] pb-[60px];
+
+    .languages {
+        img {
+            box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.12);
+            @apply mx-auto;
+        }
+    }
+}

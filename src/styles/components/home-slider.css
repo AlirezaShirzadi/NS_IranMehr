@@ -1,5 +1,5 @@
 .section-home-slider {
-    margin: 48px 0 50px 0;
+    padding: 48px 0 50px 0;
 
     .home-slider {
         @apply relative;
