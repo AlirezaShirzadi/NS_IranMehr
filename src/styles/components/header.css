@@ -1,18 +1,28 @@
 .main-header {
-    @apply bg-white py-6;
+    @apply bg-white py-6 sticky top-0 z-40;
     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
+    transition: top 2s ease-in-out;
+
+    &.fixed-header {
+        @apply sticky top-0 left-0 right-0 z-40;
+        transition: top 2s ease-in-out;
+    }
 
     .header-wrapper {
         @apply flex justify-between items-center;
 
         .nav {
-            @apply bg-white absolute order-2 top-0 -right-64 h-dvh lg:top-auto lg:right-auto lg:h-auto lg:relative xl:shrink-0 xl:grow lg:px-4 xl:px-10 w-64 lg:w-auto transition-all duration-200 z-50;
+            @apply bg-white overflow-y-auto fixed order-2 top-0 -right-64 h-full lg:top-auto lg:right-auto lg:h-auto lg:relative xl:shrink-0 xl:grow lg:px-4 xl:px-10 w-64 lg:w-auto transition-all duration-200 z-50;
+            @media screen and (max-width: 1024px) {
+                box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
+            }
 
             .nav__list {
                 @apply flex flex-col lg:flex-row items-start lg:items-center justify-between;
 
                 > .nav__item {
                     @apply relative w-full lg:w-auto;
+
                     .nav__link {
                         @apply flex items-center lg:rounded-lg xl:rounded-xl gap-2 py-2 px-1 xl:py-[14px] xl:px-4 transition-all duration-300;
 
@@ -36,6 +46,7 @@
                     }
 
                     /* Submenu Styles */
+
                     .submenu {
                         @apply hidden bg-white w-full lg:absolute lg:top-full lg:right-0 lg:min-w-[200px] lg:w-auto lg:shadow-md lg:rounded-lg lg:mt-0 z-10;
 
@@ -47,6 +58,7 @@
                             }
 
                             /* Nested Submenu Styles */
+
                             .submenu--nested {
                                 @apply lg:absolute lg:right-full lg:top-0 lg:mr-0 lg:mt-0;
                             }
@@ -62,12 +74,14 @@
                     }
 
                     /* Show submenu when active class is added (for mobile) */
+
                     &.submenu-active > .submenu,
                     .submenu__item.submenu-active > .submenu--nested {
                         @apply block;
                     }
 
                     /* Rotate arrow when submenu is active */
+
                     &.submenu-active > .nav__link .submenu-toggle svg,
                     .submenu__item.submenu-active > .submenu__link .submenu-toggle svg {
                         @apply rotate-[270deg] lg:rotate-0;

@@ -9,6 +9,7 @@ $(document).ready(function() {
     $("#nav-toggle").on('click', function(){
         $("#overlay").removeClass('hidden');
         $("#main-menu").addClass('active');
+        $('body').addClass('overflow-hidden');
     });
 
     $("#overlay").on('click', function(){
@@ -16,6 +17,7 @@ $(document).ready(function() {
         $("#main-menu").removeClass('active');
         // Close all submenus when closing the main menu
         $(".submenu-active").removeClass('submenu-active');
+        $('body').removeClass('overflow-hidden');
     });
 
     $("#nav-close").on('click', function(){
@@ -23,6 +25,7 @@ $(document).ready(function() {
         $("#main-menu").removeClass('active');
         // Close all submenus when closing the main menu
         $(".submenu-active").removeClass('submenu-active');
+        $('body').removeClass('overflow-hidden');
     });
 
     // Submenu toggle functionality
@@ -62,6 +65,15 @@ $(document).ready(function() {
         if ($(window).width() >= 1024) {
             // Remove active classes on desktop as hover will handle it
             $('.submenu-active').removeClass('submenu-active');
+        }
+    });
+
+    // Handle header on scroll
+    $(window).on('scroll', function() {
+        if ($(window).scrollTop() > 100) {
+            $('.main-header').addClass('fixed-header');
+        } else {
+            $('.main-header').removeClass('fixed-header');
         }
     });
 });
