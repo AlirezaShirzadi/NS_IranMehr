@@ -1,0 +1,3 @@
+.section-home-department {
+    @apply pt-[41px] pb-[100px] bg-gradient-to-b from-[#0052B433] to-[#FFFFFF80];
+}

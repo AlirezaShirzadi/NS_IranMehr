@@ -12,7 +12,7 @@
         @apply flex justify-between items-center;
 
         .nav {
-            @apply bg-white overflow-y-auto fixed order-2 top-0 -right-64 h-full lg:top-auto lg:right-auto lg:h-auto lg:relative xl:shrink-0 xl:grow lg:px-4 xl:px-10 w-64 lg:w-auto transition-all duration-200 z-50;
+            @apply bg-white overflow-y-auto lg:overflow-y-visible fixed order-2 top-0 -right-64 h-full lg:top-auto lg:right-auto lg:h-auto lg:relative xl:shrink-0 xl:grow lg:px-4 xl:px-10 w-64 lg:w-auto transition-all duration-200 z-50;
             @media screen and (max-width: 1024px) {
                 box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
             }

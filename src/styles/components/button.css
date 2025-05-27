@@ -2,7 +2,7 @@
     @apply flex items-center rounded-xl text-white;
 
     .icon {
-        @apply p-2 lg:p-3 bg-[#FFFFFF29];
+        @apply p-2 lg:p-3 bg-[#FFFFFF29] rounded-tr-xl rounded-br-xl;
 
         svg {
             @apply size-4 lg:size-6;
@@ -16,5 +16,9 @@
 
 .btn--primary {
     @apply bg-primary;
+}
+
+.btn--secondary {
+    @apply bg-secondary;
 }
 
