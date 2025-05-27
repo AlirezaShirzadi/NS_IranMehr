@@ -7,7 +7,7 @@ import 'owl.carousel/dist/owl.carousel.js';
 window.jQuery = window.$ = $;
 
 $(document).ready(function () {
-    $(".owl-carousel").owlCarousel({
+    $(".home-slider").owlCarousel({
         loop: true,
         rtl: true,
         nav: true,
@@ -23,6 +23,25 @@ $(document).ready(function () {
                 {
                     dots: false,
                 }
+        }
+    });
+
+    $(".counter-slider").owlCarousel({
+        loop: true,
+        rtl: true,
+        nav: false,
+        items: 1,
+        responsive: {
+            0: {
+                dots: true,
+                item: 1
+            },
+            768: {
+                items: 2,
+            },
+            1024: {
+                dots: false,
+            }
         }
     });
 });

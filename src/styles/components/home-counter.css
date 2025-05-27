@@ -1,0 +1,65 @@
+.section-home-counter {
+    @apply pt-[59px] pb-[30px] bg-gradient-to-t from-[#0052B433] from-50% to-[#FFFFFF80] to-50%;
+
+    .counter-wrapper {
+        @apply hidden lg:grid grid-cols-5 bg-white rounded-4xl py-[42px] ps-16 pe-[65px];
+        box-shadow: 0 4px 50px 0 rgba(0, 82, 180, 0.20);
+
+        .counter-item {
+            @apply relative col-span-1 flex flex-col items-center after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-[1px] after:h-[65px] after:bg-[#C8A499] last:after:hidden;
+
+            .counter-item__icon {
+                @apply mb-8;
+
+                svg {
+                    @apply size-[44px];
+                }
+            }
+
+            .counter-item__number {
+                @apply text-black text-[40px]/[32px] font-YekanBakhBold mb-2;
+                direction: ltr;
+            }
+
+            .counter-item__text {
+                @apply text-black text-lg/[32px]
+            }
+        }
+    }
+
+    .counter-slider {
+        @apply block lg:hidden! bg-white rounded-4xl py-[42px] ps-16 pe-[65px];
+        box-shadow: 0 4px 50px 0 rgba(0, 82, 180, 0.20);
+
+        .owl-dots {
+            @apply pt-5;
+
+            .owl-dot.active {
+                span {
+                    @apply bg-primary;
+                }
+            }
+        }
+
+        .counter-item {
+            @apply relative col-span-1 flex flex-col items-center after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-[1px] after:h-[65px] after:bg-[#C8A499] last:after:hidden;
+
+            .counter-item__icon {
+                @apply mb-8;
+
+                svg {
+                    @apply size-[44px];
+                }
+            }
+
+            .counter-item__number {
+                @apply text-black text-[40px]/[32px] font-YekanBakhBold mb-2;
+                direction: ltr;
+            }
+
+            .counter-item__text {
+                @apply text-black text-lg/[32px]
+            }
+        }
+    }
+}
