@@ -22,3 +22,15 @@
     @apply bg-secondary;
 }
 
+.btn--white {
+    @apply bg-white text-primary;
+
+    .icon {
+        @apply bg-[#0052b433];
+    }
+
+    .text {
+        @apply text-sm/[18px] font-YekanBakhDemiBold;
+    }
+}
+
