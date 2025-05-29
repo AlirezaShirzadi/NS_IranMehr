@@ -1,0 +1,15 @@
+.section-home-blog {
+    @apply mb-[150px];
+
+    .blog-slider {
+        .owl-dots {
+            @apply pt-5;
+
+            .owl-dot.active {
+                span {
+                    @apply bg-secondary;
+                }
+            }
+        }
+    }
+}

@@ -44,4 +44,27 @@ $(document).ready(function () {
             }
         }
     });
+
+    $(".blog-slider").owlCarousel({
+        loop: true,
+        rtl: true,
+        nav: false,
+        margin: 20,
+        dots: true,
+        responsive: {
+            0: {
+                items: 1,
+                margin: 0
+            },
+            768: {
+                items: 2,
+            },
+            1024: {
+                items: 3,
+            },
+            1200: {
+                items: 4,
+            }
+        }
+    });
 });
