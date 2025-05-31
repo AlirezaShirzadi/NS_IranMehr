@@ -1,7 +1,18 @@
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
+import { resolve } from 'path'
+
 export default defineConfig({
     plugins: [
         tailwindcss(),
     ],
+    base: './', // Use relative paths instead of absolute paths
+    build: {
+        rollupOptions: {
+            input: {
+                main: resolve(__dirname, 'index.html'),
+                'english-department': resolve(__dirname, 'english-department.html'),
+            },
+        },
+    },
 })
