@@ -3,3 +3,13 @@
     --color-secondary: #F04923;
     --color-general-black: #040404;
 }
+
+::-moz-selection { /* Code for Firefox */
+    color: #fff;
+    background: var(--color-secondary);
+}
+
+::selection {
+    color: #fff;
+    background: var(--color-secondary);
+}
