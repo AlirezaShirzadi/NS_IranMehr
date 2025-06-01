@@ -12,6 +12,7 @@ export default defineConfig({
             input: {
                 main: resolve(__dirname, 'index.html'),
                 'english-department': resolve(__dirname, 'english-department.html'),
+                'online-course': resolve(__dirname, 'online-course.html')
             },
         },
     },
