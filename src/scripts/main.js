@@ -1,6 +1,7 @@
 /* components */
 import "./components/menu.js"
 import "./components/slider.js"
+import "./components/tabs.js"
 
 /* libraries */
 import { Fancybox } from "@fancyapps/ui";
