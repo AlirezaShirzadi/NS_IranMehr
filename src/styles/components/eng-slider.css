@@ -1,0 +1,21 @@
+.section-eng-graduated {
+    .grad-slider {
+        .item {
+            @apply m-4 w-full max-w-[297px] min-w-[297px];
+            .grad-item {
+                @apply w-full max-w-[297px] py-8 bg-white rounded-3xl text-center;
+                box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.10);
+            }
+        }
+
+        .owl-dots {
+            @apply mt-2;
+
+            .owl-dot.active {
+                span {
+                    @apply bg-secondary;
+                }
+            }
+        }
+    }
+}

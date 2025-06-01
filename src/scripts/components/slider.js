@@ -67,4 +67,13 @@ $(document).ready(function () {
             }
         }
     });
+
+    $(".grad-slider").owlCarousel({
+        loop: true,
+        rtl: true,
+        nav: false,
+        margin: 20,
+        dots: true,
+        autoWidth: true,
+    });
 });
