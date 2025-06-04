@@ -23,6 +23,17 @@ $(document).ready(function () {
                 {
                     dots: false,
                 }
+        },
+        onInitialized: function() {
+            // Add aria-labels to home slider dots
+            $(".home-slider .owl-dot").each(function(index) {
+                $(this).attr("aria-label", "اسلاید " + (index + 1));
+            });
+
+            $(".home-slider .owl-nav button").each(function(index) {
+                $(this).attr("aria-label", "nav " + (index + 1));
+                $(this).attr("role", "button");
+            })
         }
     });
 
@@ -42,6 +53,12 @@ $(document).ready(function () {
             1024: {
                 dots: false,
             }
+        },
+        onInitialized: function() {
+            // Add aria-labels to counter slider dots
+            $(".counter-slider .owl-dot").each(function(index) {
+                $(this).attr("aria-label", "آمار " + (index + 1));
+            });
         }
     });
 
@@ -65,6 +82,12 @@ $(document).ready(function () {
             1200: {
                 items: 4,
             }
+        },
+        onInitialized: function() {
+            // Add aria-labels to blog slider dots
+            $(".blog-slider .owl-dot").each(function(index) {
+                $(this).attr("aria-label", "مقاله " + (index + 1));
+            });
         }
     });
 
@@ -75,5 +98,11 @@ $(document).ready(function () {
         margin: 20,
         dots: true,
         autoWidth: true,
+        onInitialized: function() {
+            // Add aria-labels to grad slider dots
+            $(".grad-slider .owl-dot").each(function(index) {
+                $(this).attr("aria-label", "فارغ التحصیل " + (index + 1));
+            });
+        }
     });
 });
