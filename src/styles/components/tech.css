@@ -1,0 +1,17 @@
+.section-tech-desc {
+    figure {
+        img {
+            box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.10);
+        }
+    }
+}
+
+.section-tech-how {
+    @apply relative bg-[#00224C] py-16;
+}
+
+.section-tech-list {
+    .tech-list-item {
+        box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.08);
+    }
+}

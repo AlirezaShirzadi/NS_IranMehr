@@ -15,6 +15,7 @@ export default defineConfig({
                 'online-course': resolve(__dirname, 'online-course.html'),
                 'blog': resolve(__dirname, 'blog.html'),
                 'blog-post': resolve(__dirname, 'blog-post.html'),
+                'tech-department': resolve(__dirname, 'tech-department.html'),
             },
         },
     },
