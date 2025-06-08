@@ -1,0 +1,11 @@
+.section-contact-info {
+    @apply py-[44px] mb-[123px] bg-gradient-to-b from-[#E7EFF8] to-[#FFFFFF];
+
+    .contact-box {
+        box-shadow: 0 0 15px -3px rgba(0, 0, 0, 0.10);
+    }
+
+    .contact-form {
+        box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.08);
+    }
+}

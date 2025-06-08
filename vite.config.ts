@@ -1,6 +1,6 @@
-import { defineConfig } from 'vite'
+import {defineConfig} from 'vite'
 import tailwindcss from '@tailwindcss/vite'
-import { resolve } from 'path'
+import {resolve} from 'path'
 
 export default defineConfig({
     plugins: [
@@ -16,6 +16,8 @@ export default defineConfig({
                 'blog': resolve(__dirname, 'blog.html'),
                 'blog-post': resolve(__dirname, 'blog-post.html'),
                 'tech-department': resolve(__dirname, 'tech-department.html'),
+                'about': resolve(__dirname, 'about.html'),
+                'contact': resolve(__dirname, 'contact.html'),
             },
         },
     },
