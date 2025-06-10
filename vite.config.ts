@@ -18,6 +18,7 @@ export default defineConfig({
                 'tech-department': resolve(__dirname, 'tech-department.html'),
                 'about': resolve(__dirname, 'about.html'),
                 'contact': resolve(__dirname, 'contact.html'),
+                'german-department': resolve(__dirname, 'german-department.html'),
             },
         },
     },
