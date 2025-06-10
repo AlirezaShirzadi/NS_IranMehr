@@ -796,6 +796,7 @@
         <script type="module">
             import $ from 'jquery';
             import Swal from 'sweetalert2';
+            import 'jquery-validation';
             /* contact form validation */
             if ($("#contact-form").length) {
                 // Add custom validation messages in Persian
@@ -873,7 +874,7 @@
 
             async function postJSON(data) {
                 try {
-                    const response = await fetch("/workflows/Invoke?token=CfDJ8OhAxxPwg4NOnZhR0-SA0k_SgrAVP7J8DkW53E25eVgQA8Qs2KLIHSEmrt4vL_eiN8RfIhq7zMzJbiRuClMczztgyngEv7RkcqxHt7z0fjwMCx_vYLSWGgMql8XUee0pyxrnfQAJBGxmqe1sWixRpsYrayyZ7QgbjgcphJjmlOk6N2mj6n81nYeOzXzKfsnWjpJNqQFWHYiW9tS5sx24f1hGcfpROKAHTrK1rLuFkPGO", {
+                    const response = await fetch("/workflows/Invoke?token=CfDJ8OciuSCO-r5DhCWvQeP_S1dnzfMxL3PIvcIwvraSg2n7Y2_G2OyXCqd3m8TJScIbvjvis0X3AiCg1Ol37I8LO7GDW_V7W0yFuzygH8-VES8HrpPsPSJdZcgOiloU8ijehF6R6Cr_rYuQdxPR6Nn1lyFRYSPLEY9fmFters8A7r1rkSKmCI5aj6exMkR7HIu6ME4fpSeprum_APXB8zvowyDGHS_iWoHBZ3Jnzd5EjW8E", {
                         method: "POST", // or 'PUT'
                         headers: {
                             "Content-Type": "application/x-www-form-urlencoded; charset=utf-8",

@@ -4,12 +4,10 @@ import "./components/slider.js"
 import "./components/tabs.js"
 
 /* libraries */
-import $ from 'jquery';
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import 'jquery-validation';
 
 AOS.init({
     disable: "mobile",
