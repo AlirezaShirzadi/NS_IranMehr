@@ -2,6 +2,7 @@
 import "./components/menu.js"
 import "./components/slider.js"
 import "./components/tabs.js"
+import "./components/accordion.js"
 
 /* libraries */
 import { Fancybox } from "@fancyapps/ui";

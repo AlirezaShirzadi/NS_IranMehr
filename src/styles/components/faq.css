@@ -1,0 +1,7 @@
+.faq-wrapper {
+    @apply w-full max-w-[1036px] mx-auto bg-white p-12 rounded-4xl mb-[163px];
+    box-shadow: 0 4px 40px 0 rgba(190, 193, 208, 0.30);
+    .faq-icon {
+        flex-shrink: 0;
+    }
+}

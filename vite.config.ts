@@ -22,6 +22,7 @@ export default defineConfig({
                 'france-department': resolve(__dirname, 'france-department.html'),
                 'turkey-department': resolve(__dirname, 'turkey-department.html'),
                 'ielts-department': resolve(__dirname, 'ielts-department.html'),
+                'ttc-department': resolve(__dirname, 'ttc-department.html'),
             },
         },
     },
