@@ -20,6 +20,7 @@ export default defineConfig({
                 'contact': resolve(__dirname, 'contact.html'),
                 'german-department': resolve(__dirname, 'german-department.html'),
                 'france-department': resolve(__dirname, 'france-department.html'),
+                'turkey-department': resolve(__dirname, 'turkey-department.html'),
             },
         },
     },
