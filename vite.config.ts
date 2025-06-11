@@ -21,6 +21,7 @@ export default defineConfig({
                 'german-department': resolve(__dirname, 'german-department.html'),
                 'france-department': resolve(__dirname, 'france-department.html'),
                 'turkey-department': resolve(__dirname, 'turkey-department.html'),
+                'ielts-department': resolve(__dirname, 'ielts-department.html'),
             },
         },
     },
