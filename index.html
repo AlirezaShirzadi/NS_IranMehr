@@ -424,6 +424,37 @@
         <!-- Header end -->
         <!-- Start Main -->
         <main>
+            <!-- Start Term Countdown -->
+            <section class="section-home-countdown mt-8">
+                <div class="container mx-auto px-2 sm:px-0 relative">
+                    <div class="flex items-center justify-between">
+                        <div class="text-xl font-YekanBakhBold mr-3 relative before:content-[''] before:absolute before:w-[5px] before:rounded-2xl before:h-full before:bg-primary before:-right-3">روز شمار ترم آینده:</div>
+                        <div class="flex items-center justify-center gap-3">
+                            <div id="second" class="flex flex-col items-center bg-[#E6EEF8] py-3 px-8 rounded-2xl">
+                                <span class="text-[32px]/[24px] font-YekanBakhBlack text-primary"></span>
+                                <span class="text-base/[24px]">Second</span>
+                            </div>
+                            <span class="text-[32px]/[24px] font-YekanBakhBold text-primary">:</span>
+                            <div id="minute" class="flex flex-col items-center bg-[#E6EEF8] py-3 px-8 rounded-2xl">
+                                <span class="text-[32px]/[24px] font-YekanBakhBlack text-primary"></span>
+                                <span class="text-base/[24px]">Minute</span>
+                            </div>
+                            <span class="text-[32px]/[24px] font-YekanBakhBold text-primary">:</span>
+                            <div id="hour" class="flex flex-col items-center bg-[#E6EEF8] py-3 px-8 rounded-2xl">
+                                <span class="text-[32px]/[24px] font-YekanBakhBlack text-primary"></span>
+                                <span class="text-base/[24px]">Hour</span>
+                            </div>
+                            <span class="text-[32px]/[24px] font-YekanBakhBold text-primary">:</span>
+                            <div id="day" class="flex flex-col items-center bg-[#E6EEF8] py-3 px-8 rounded-2xl">
+                                <span class="text-[32px]/[24px] font-YekanBakhBlack text-primary"></span>
+                                <span class="text-base/[24px]">Day</span>
+                            </div>
+                        </div>
+                        <img class="w-[66px] h-[72px]" src="/images/flag.webp" alt="flag" width="66" height="72" />
+                    </div>
+                </div>
+            </section>
+            <!-- End Term Countdown -->
             <!-- Start Slider -->
             <section class="section-home-slider">
                 <div class="container mx-auto px-2 sm:px-0 relative">
@@ -1371,5 +1402,58 @@
         </footer>
         <!-- End Footer Section -->
         <script type="module" src="/src/scripts/main.js"></script>
+        <script src="/scripts/jalaali.min.js"></script>
+        <script>
+
+            // Set your target Shamsi date here
+            const targetShamsiDate = {
+                year: 1404,
+                month: 5,
+                day: 30,
+                hour: 0,
+                minute: 0,
+                second: 0
+            };
+
+            // Convert Shamsi to Gregorian
+            const gDate = jalaali.toGregorian(targetShamsiDate.year, targetShamsiDate.month, targetShamsiDate.day);
+            const targetDate = new Date(
+                gDate.gy,
+                gDate.gm - 1,
+                gDate.gd,
+                targetShamsiDate.hour,
+                targetShamsiDate.minute,
+                targetShamsiDate.second
+            );
+
+            // Start countdown
+            function startCountdown() {
+                const timer = setInterval(() => {
+                    const now = new Date();
+                    const diff = targetDate - now;
+
+                    if (diff <= 0) {
+                        clearInterval(timer);
+                        document.getElementById("day").children[0].textContent = "0";
+                        document.getElementById("hour").children[0].textContent = "0";
+                        document.getElementById("minute").children[0].textContent = "0";
+                        document.getElementById("second").children[0].textContent = "0";
+                        return;
+                    }
+
+                    const seconds = Math.floor((diff / 1000) % 60);
+                    const minutes = Math.floor((diff / 1000 / 60) % 60);
+                    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+                    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+                    document.getElementById("day").children[0].textContent = days;
+                    document.getElementById("hour").children[0].textContent = hours;
+                    document.getElementById("minute").children[0].textContent = minutes;
+                    document.getElementById("second").children[0].textContent = seconds;
+                }, 1000);
+            }
+
+            startCountdown();
+        </script>
     </body>
 </html>
